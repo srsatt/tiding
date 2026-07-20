@@ -1,0 +1,11 @@
+.icon {
+	-webkit-mask: var(--icon-url) center / contain no-repeat;
+	background-color: currentColor;
+	display: inline-block;
+	flex: 0 0 auto;
+	height: 16px;
+	mask: var(--icon-url) center / contain no-repeat;
+	pointer-events: none;
+	vertical-align: -2px;
+	width: 16px;
+}

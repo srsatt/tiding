@@ -1,0 +1,10 @@
+.truncate {
+	max-width: 360px;
+}
+
+.truncate > span {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

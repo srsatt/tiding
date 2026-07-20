@@ -1,0 +1,41 @@
+.parkTabs {
+	display: grid;
+	gap: 14px;
+	margin-bottom: 18px;
+}
+
+.parkTabsList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	padding: 4px;
+	background: var(--color-muted);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-l2);
+}
+
+.parkTabTrigger {
+	display: inline-flex;
+	align-items: center;
+	min-height: 34px;
+	padding: 7px 12px;
+	border-radius: var(--radius-l1);
+	color: var(--color-text);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.parkTabTrigger:hover,
+.parkTabTrigger[data-hover] {
+	background: var(--color-panel);
+}
+
+.parkTabTrigger[data-selected],
+.parkTabTrigger[data-state="selected"] {
+	background: var(--color-panel);
+	box-shadow: var(--shadow-xs);
+}
+
+.parkTabsContent {
+	min-width: 0;
+}

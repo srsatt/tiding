@@ -1,0 +1,63 @@
+.designerEmptyState {
+	align-items: center;
+	background: #ffffff;
+	border: 1px dashed #a4aaa7;
+	color: #66706c;
+	display: flex;
+	font-size: 13px;
+	font-weight: 700;
+	inset: 24px;
+	justify-content: center;
+	pointer-events: none;
+	position: absolute;
+}
+
+.designerEmptyState[hidden] {
+	display: none;
+}
+
+.designerCanvas[data-drop-active="true"] .designerEmptyState {
+	border-color: #111;
+	color: #111;
+}
+
+.designerCanvasBounds {
+	inset: 0;
+	pointer-events: none;
+	position: absolute;
+}
+
+.designerCanvasBounds span {
+	background: #ffffff;
+	border: 1px solid #c8cdca;
+	color: #626b67;
+	font-size: 10px;
+	padding: 2px 4px;
+	position: absolute;
+}
+
+.designerShell[data-grid="false"] .designerCanvasBounds {
+	display: none;
+}
+
+.boundsOrigin {
+	left: 5px;
+	top: 5px;
+}
+
+.boundsWidth {
+	left: 50%;
+	top: 5px;
+	transform: translateX(-50%);
+}
+
+.boundsHeight {
+	left: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.boundsMax {
+	bottom: 5px;
+	right: 5px;
+}

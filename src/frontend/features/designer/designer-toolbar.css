@@ -1,0 +1,53 @@
+.designerToolbar {
+	background: #ffffff;
+	border-bottom: 1px solid #d8dcde;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 0;
+	padding: 12px 16px;
+}
+
+.designerToolbar .button {
+	border-radius: 4px;
+	box-shadow: none;
+}
+
+.designerToolbar [data-part="item"] {
+	background: transparent;
+	border-color: transparent;
+	color: #66706c;
+}
+
+.designerToolbar [data-part="item"][data-state="checked"] {
+	background: #2e3532;
+	border-color: #2e3532;
+	color: #ffffff;
+}
+
+.designerToolbar [data-designer-save] {
+	background: #506f32;
+	border-color: #506f32;
+}
+
+.designerToolbar [data-designer-save]:hover {
+	background: #405c27;
+}
+
+.designerZoom {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.designerZoom legend {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}

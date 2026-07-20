@@ -1,0 +1,91 @@
+.navBrand {
+	display: grid;
+	gap: 2px;
+	margin-bottom: 12px;
+}
+
+.navBrand strong {
+	font-size: 18px;
+	letter-spacing: 0;
+}
+
+.navBrand span {
+	color: #aeb8bd;
+	font-size: 12px;
+}
+
+.navLinks {
+	display: grid;
+	gap: 4px;
+}
+
+.nav a[aria-current="page"],
+.nav a[data-state="active"] {
+	background: rgba(255, 255, 255, 0.12);
+	color: #ffffff;
+	box-shadow: inset 3px 0 0 var(--color-accent-solid);
+}
+
+.themePicker {
+	display: grid;
+	gap: 6px;
+	margin-top: 12px;
+}
+
+.themePickerLabel {
+	align-items: center;
+	color: #cfd6da;
+	display: flex;
+	gap: 6px;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.themePicker select {
+	background: #35413d;
+	border-color: #53615c;
+	color: #ffffff;
+	font-size: 12px;
+	min-height: 30px;
+	padding: 5px 30px 5px 10px;
+}
+
+.themePicker select:hover {
+	background: #3d4b46;
+}
+
+.themePicker .parkSelect::after {
+	color: #ffffff;
+	content: "⌄";
+	font-size: 14px;
+	right: 10px;
+}
+
+@media (max-width: 820px) {
+	.navBrand {
+		display: flex;
+		align-items: baseline;
+		gap: 8px;
+		margin: 0;
+		order: 1;
+	}
+
+	.navBrand strong {
+		font-size: 16px;
+	}
+
+	.themePicker {
+		order: 2;
+		margin: 0;
+		margin-left: auto;
+		width: 88px;
+	}
+
+	.themePickerLabel {
+		display: none;
+	}
+
+	.themePicker select {
+		width: 100%;
+	}
+}

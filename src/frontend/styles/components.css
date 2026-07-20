@@ -1,0 +1,142 @@
+.formGrid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 14px;
+}
+
+.wizardGrid {
+	display: grid;
+	grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+	gap: 14px;
+	align-items: start;
+}
+
+.wizardMain {
+	display: grid;
+	gap: 12px;
+}
+
+.wide,
+.formActions {
+	grid-column: 1 / -1;
+}
+
+.formActions,
+.actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	align-items: center;
+}
+
+.inlineForm {
+	display: inline-flex;
+	margin: 0;
+}
+
+.arkCollapsible {
+	display: block;
+}
+
+.arkCollapsibleItem {
+	display: grid;
+	gap: 12px;
+}
+
+.arkCollapsibleTrigger {
+	width: 100%;
+	justify-content: space-between;
+	background: #58626a;
+}
+
+.arkCollapsibleTrigger:hover {
+	background: #475159;
+}
+
+.arkCollapsibleIndicator {
+	font-weight: 800;
+	line-height: 1;
+}
+
+.arkCollapsibleContent {
+	padding-top: 4px;
+}
+
+.previewFrame {
+	display: grid;
+	place-items: center;
+	min-height: 320px;
+	background: #dce1e3;
+	border: 1px dashed #9aa4ac;
+	border-radius: 6px;
+	overflow: auto;
+	margin-bottom: 12px;
+}
+
+.previewFrame img {
+	max-width: 100%;
+	height: auto;
+	image-rendering: pixelated;
+	border: 1px solid #79828a;
+	background: white;
+}
+
+.status {
+	display: inline-flex;
+	padding: 3px 8px;
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 700;
+	background: #e8f3ef;
+	color: #15624d;
+}
+
+.muted {
+	background: #eceff1;
+	color: #59616a;
+}
+
+.mutedText {
+	color: #59616a;
+	font-size: 12px;
+	margin-top: 4px;
+}
+
+.ok {
+	background: #e8f3ef;
+	color: #15624d;
+}
+
+.errorText {
+	color: #9d2f22;
+	background: #f8e6e1;
+}
+
+.facts {
+	display: grid;
+	grid-template-columns: 180px minmax(0, 1fr);
+	gap: 10px 16px;
+	margin: 0;
+}
+
+.facts dt {
+	font-weight: 700;
+	color: #464b50;
+}
+
+.facts dd {
+	margin: 0;
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
+.dataPreview {
+	max-height: 280px;
+	overflow: auto;
+	background: #f0f3f4;
+	border: 1px solid var(--line);
+	border-radius: 6px;
+	padding: 12px;
+	white-space: pre-wrap;
+	overflow-wrap: anywhere;
+}

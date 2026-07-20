@@ -1,0 +1,8 @@
+.renderPreview {
+	margin: 14px 0;
+}
+
+.renderBmpPreview {
+	min-height: 220px;
+	width: 100%;
+}

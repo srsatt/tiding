@@ -1,0 +1,80 @@
+.designerShell {
+	--designer-zoom: 1;
+	align-items: stretch;
+	background: #f0f1f2;
+	border: 1px solid #d8dcde;
+	display: grid;
+	gap: 0;
+	grid-template-columns: 250px minmax(0, 1fr) 270px;
+}
+
+.designerPalette,
+.designerInspector {
+	background: #ffffff;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	padding: 16px;
+}
+
+.designerPalette {
+	border-right: 1px solid #d8dcde;
+}
+
+.designerInspector {
+	border-left: 1px solid #d8dcde;
+}
+
+.designerStage {
+	background: #f0f1f2;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	min-width: 0;
+	padding: 0;
+}
+
+.designerCanvasViewport {
+	align-items: flex-start;
+	display: flex;
+	justify-content: flex-start;
+	min-height: min(720px, calc(100vh - 190px));
+	overflow: auto;
+	padding: 40px 14px;
+}
+
+.designerCanvas {
+	background: #ffffff;
+	border: 3px solid #1a1d1c;
+	box-shadow: 0 4px 12px rgb(0 0 0 / 16%);
+	flex: 0 0 auto;
+	min-width: 320px;
+	overflow: hidden;
+	position: relative;
+	width: calc(var(--design-width-px) * var(--designer-zoom));
+}
+
+.designerCanvasRender {
+	display: block;
+	height: 100%;
+	image-rendering: pixelated;
+	object-fit: fill;
+	pointer-events: none;
+	width: 100%;
+}
+
+.designerCanvasRender[hidden] {
+	display: none;
+}
+
+@media (max-width: 980px) {
+	.designerShell {
+		border: 0;
+		grid-template-columns: 1fr;
+	}
+
+	.designerCanvasViewport {
+		min-height: auto;
+		padding: 24px 16px;
+	}
+}

@@ -1,0 +1,87 @@
+:root,
+[data-theme="jade"] {
+	color-scheme: light;
+	--color-bg: #f6f8f7;
+	--color-panel: #ffffff;
+	--color-surface: #eef8f4;
+	--color-surface-hover: #e3f1ec;
+	--color-border: #d3dfda;
+	--color-border-hover: #9db6ac;
+	--color-fg: #1e2421;
+	--color-fg-muted: #65736d;
+	--color-accent-solid: #147d64;
+	--color-accent-solid-hover: #0f6a55;
+	--color-accent-fg: #ffffff;
+	--color-danger-solid: #b74335;
+	--color-danger-fg: #ffffff;
+	--focus-ring: rgba(20, 125, 100, 0.24);
+	--nav: #1f2724;
+	--radius-l1: 6px;
+	--radius-l2: 8px;
+	--radius-l3: 12px;
+	--shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.06);
+	--ink: var(--color-fg);
+	--muted: var(--color-fg-muted);
+	--line: var(--color-border);
+	--panel: var(--color-panel);
+	--bg: var(--color-bg);
+	--accent: var(--color-accent-solid);
+	--warn: var(--color-danger-solid);
+}
+
+[data-theme="slate"] {
+	--color-bg: #f5f7fa;
+	--color-surface: #f0f3f7;
+	--color-surface-hover: #e5eaf0;
+	--color-border: #d3dae3;
+	--color-border-hover: #a9b4c2;
+	--color-fg: #1f252e;
+	--color-fg-muted: #626d7a;
+	--color-accent-solid: #315f9f;
+	--color-accent-solid-hover: #294f86;
+	--focus-ring: rgba(49, 95, 159, 0.24);
+	--nav: #202832;
+}
+
+[data-theme="amber"] {
+	--color-bg: #faf8f2;
+	--color-surface: #fbf0d5;
+	--color-surface-hover: #f4e5bd;
+	--color-border: #e4d3a9;
+	--color-border-hover: #c5a966;
+	--color-fg: #2a251b;
+	--color-fg-muted: #776a50;
+	--color-accent-solid: #916813;
+	--color-accent-solid-hover: #79570f;
+	--focus-ring: rgba(145, 104, 19, 0.24);
+	--nav: #2d281d;
+}
+
+[data-theme="dark"] {
+	color-scheme: dark;
+	--color-bg: #151817;
+	--color-panel: #1f2422;
+	--color-surface: #28302d;
+	--color-surface-hover: #313b37;
+	--color-border: #394541;
+	--color-border-hover: #52645e;
+	--color-fg: #ecf1ee;
+	--color-fg-muted: #aebbb5;
+	--color-accent-solid: #35a684;
+	--color-accent-solid-hover: #43bd98;
+	--color-danger-solid: #d15e50;
+	--focus-ring: rgba(53, 166, 132, 0.3);
+	--nav: #111413;
+	--shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+.themePicker {
+	display: grid;
+	gap: 6px;
+	margin-top: 10px;
+}
+
+.themePicker select {
+	min-height: 32px;
+	padding: 4px 8px;
+}

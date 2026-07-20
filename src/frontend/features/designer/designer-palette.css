@@ -1,0 +1,114 @@
+.designerPalette {
+	max-height: calc(100vh - 16px);
+	overflow: auto;
+	position: sticky;
+	top: 16px;
+}
+
+.designerPaletteHeader {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.designerPaletteHeader h2 {
+	margin: 0;
+}
+
+.designerPaletteCount {
+	align-items: center;
+	background: #f1f3f2;
+	border: 1px solid #d8dcda;
+	border-radius: 50%;
+	color: #66706c;
+	display: inline-flex;
+	font-size: 12px;
+	font-weight: 750;
+	height: 26px;
+	justify-content: center;
+	min-width: 26px;
+}
+
+.designerPaletteGroup h3 {
+	align-items: center;
+	color: #66706c;
+	display: flex;
+	font-size: 11px;
+	gap: 6px;
+	letter-spacing: 0.05em;
+	margin: 18px 0 7px;
+	text-transform: uppercase;
+}
+
+.designerPaletteGroup h3 .icon {
+	color: #7b8580;
+}
+
+.designerPaletteGroup h3 small {
+	color: #7b8580;
+	font-size: 11px;
+	margin-left: auto;
+	padding: 2px 6px;
+}
+
+.paletteItem {
+	align-items: center;
+	background: #f3f4f4;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	color: var(--color-fg);
+	cursor: grab;
+	display: flex;
+	font-size: 13px;
+	font-weight: 600;
+	gap: 9px;
+	margin-bottom: 5px;
+	min-height: 42px;
+	padding: 6px 9px;
+	text-decoration: none;
+}
+
+.paletteItemIcon {
+	align-items: center;
+	background: #ffffff;
+	border: 1px solid #e0e3e1;
+	border-radius: 7px;
+	color: #6f7874;
+	display: inline-flex;
+	height: 28px;
+	justify-content: center;
+	width: 28px;
+}
+
+.paletteItemBody {
+	display: grid;
+	gap: 1px;
+	min-width: 0;
+}
+
+.paletteItemLabel {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.paletteItemMeta {
+	display: none;
+}
+
+.paletteItem:hover,
+.paletteItem:focus-visible {
+	background: #e9ecea;
+	border-color: #cdd3cf;
+	outline: 0;
+}
+
+.paletteItem:active {
+	cursor: grabbing;
+}
+
+.paletteItem[hidden] {
+	display: none;
+}

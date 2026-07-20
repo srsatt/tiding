@@ -1,0 +1,9 @@
+.parkCard,
+.panel,
+.statPanel,
+.loginPanel {
+	background: var(--color-panel);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-l2);
+	box-shadow: var(--shadow-xs);
+}

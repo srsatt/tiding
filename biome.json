@@ -1,0 +1,24 @@
+{
+	"files": {
+		"includes": [
+			"**",
+			"!dist",
+			"!public/static",
+			"!.codex",
+			"!.agents",
+			"!.skills"
+		]
+	},
+	"overrides": [
+		{
+			"includes": ["src/frontend/shell.tsx"],
+			"linter": {
+				"rules": {
+					"security": {
+						"noDangerouslySetInnerHtml": "off"
+					}
+				}
+			}
+		}
+	]
+}

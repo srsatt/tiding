@@ -1,0 +1,145 @@
+.paletteSearch {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.designerMetric,
+.designerStatus,
+.inspectorHeader span {
+	padding: 4px 0;
+	border-radius: 0;
+	background: transparent;
+	color: var(--color-fg-muted);
+	font-size: 12px;
+	font-weight: 650;
+}
+
+.designerStatus::before {
+	content: "";
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	margin-right: 6px;
+	border-radius: 0;
+	background: #638a36;
+}
+
+.designerStatus[data-designer-status-state="saved"] {
+	background: transparent;
+	color: #4b6e26;
+}
+
+.designerStatus[data-designer-status-state="error"] {
+	background: color-mix(in srgb, var(--color-danger-solid) 14%, transparent);
+	color: var(--color-danger-solid);
+}
+
+.designerStatus[data-designer-status-state="error"]::before {
+	background: var(--warn);
+}
+
+.inspectorHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.designerWidgetList {
+	display: grid;
+	gap: 0;
+	margin-top: 12px;
+}
+
+.designerWidgetCard {
+	display: block;
+	padding: 11px 0;
+	border: 0;
+	border-bottom: 1px solid #e2e5e3;
+	border-radius: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+.designerWidgetCard:hover,
+.designerWidgetCard:focus-within {
+	background: transparent;
+	border-color: #cbd1ce;
+}
+
+.designerWidgetCardHeader,
+.designerWidgetFacts,
+.designerIconActions {
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+}
+
+.designerWidgetCardHeader {
+	display: flex;
+	justify-content: space-between;
+}
+
+.designerWidgetFacts,
+.designerIconActions {
+	display: none;
+}
+
+.designerWidgetCard[data-selected="true"] .designerWidgetFacts,
+.designerWidgetCard[data-selected="true"] .designerIconActions {
+	display: flex;
+}
+
+.designerWidgetCard[data-selected="true"] {
+	border-left: 3px solid var(--color-accent-solid);
+	padding-left: 9px;
+}
+
+.designerWidgetCardHeader a {
+	color: #202522;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.designerWidgetCardHeader span,
+.designerWidgetFacts span {
+	color: var(--color-fg-muted);
+	font-size: 12px;
+}
+
+.designerIconActions {
+	justify-content: flex-end;
+}
+
+.designerInspector small {
+	display: block;
+	color: var(--color-fg-muted);
+}
+
+.designerSelection {
+	margin-top: 14px;
+	padding-top: 14px;
+	border-top: 1px solid var(--color-border);
+}
+
+.propertyGrid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 8px;
+}
+
+.designerConfigPanels {
+	margin-top: 12px;
+}
+
+.designerConfigPanel {
+	margin-top: 8px;
+}
+
+.propertySummary {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	color: var(--color-fg-muted);
+	font-size: 12px;
+}

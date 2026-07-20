@@ -1,0 +1,55 @@
+.welcomeGrid {
+	align-items: start;
+	display: grid;
+	gap: 18px;
+	grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+}
+
+.inlineToggle {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+}
+
+.inlineToggle input {
+	height: 20px;
+	width: 20px;
+}
+
+.welcomePreview {
+	display: grid;
+	gap: 8px;
+}
+
+.welcomePreviewCanvas {
+	align-content: center;
+	background: #fff;
+	border: 1px solid var(--color-border);
+	color: #111;
+	display: grid;
+	gap: 16px;
+	justify-items: center;
+	max-width: 100%;
+	padding: 28px;
+}
+
+.welcomePreviewCanvas strong {
+	font-size: 28px;
+	text-align: center;
+}
+
+.welcomePreviewCanvas span {
+	font-size: 16px;
+	text-align: center;
+}
+
+.welcomeBmpPreview {
+	min-height: 220px;
+	width: 100%;
+}
+
+@media (max-width: 820px) {
+	.welcomeGrid {
+		grid-template-columns: 1fr;
+	}
+}

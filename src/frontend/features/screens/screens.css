@@ -1,0 +1,19 @@
+.screenThumbLink {
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-l1);
+	display: grid;
+	height: 54px;
+	overflow: hidden;
+	place-items: center;
+	width: 90px;
+}
+
+.screenThumb {
+	background: white;
+	display: block;
+	height: 100%;
+	image-rendering: pixelated;
+	object-fit: contain;
+	width: 100%;
+}

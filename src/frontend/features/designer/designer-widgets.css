@@ -1,0 +1,76 @@
+.designerWidgetRender {
+	display: block;
+	height: 100%;
+	image-rendering: pixelated;
+	pointer-events: none;
+	width: 100%;
+}
+
+.designerWidget {
+	background: transparent;
+	border: 1px dashed transparent;
+	color: #fff;
+	cursor: grab;
+	display: block;
+	overflow: visible;
+	padding: 0;
+	position: absolute;
+	text-decoration: none;
+	touch-action: none;
+	transform-origin: center center;
+}
+
+.designerWidget:hover,
+.designerWidget:focus,
+.designerWidget[data-selected="true"] {
+	border-color: #4c5350;
+	outline: 0;
+}
+
+.designerWidget[data-selected="true"] {
+	border: 2px solid #111;
+}
+
+.designerWidget[data-dragging="true"],
+.designerWidget[data-resizing="true"] {
+	cursor: grabbing;
+}
+
+.designerWidget [data-canvas-widget-label] {
+	background: #343a38;
+	border-radius: 2px;
+	font:
+		600 12px / 1.2 system-ui,
+		sans-serif;
+	left: 0;
+	padding: 4px 7px;
+	position: absolute;
+	top: -28px;
+	visibility: hidden;
+	white-space: nowrap;
+}
+
+.designerWidget:hover [data-canvas-widget-label],
+.designerWidget:focus [data-canvas-widget-label],
+.designerWidget[data-selected="true"] [data-canvas-widget-label] {
+	visibility: visible;
+}
+
+.designerResizeHandle {
+	background: #111;
+	bottom: -4px;
+	cursor: nwse-resize;
+	display: none;
+	height: 9px;
+	position: absolute;
+	right: -4px;
+	width: 9px;
+}
+
+.designerWidget[data-selected="true"] .designerResizeHandle {
+	display: block;
+}
+
+.designerWidget[data-save-state="error"] {
+	border-color: var(--warn);
+}
