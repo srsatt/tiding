@@ -162,6 +162,10 @@ The implementation is licensed under Apache-2.0. Compatibility work is developed
 
 Tiding is an experiment that has reached the useful-but-you-can-still-find-sharp-edges stage. If you try it on another small computer, connect a different TRMNL-compatible device, build a widget through MCP, or find a place where the Framework output is wrong, please open an issue with enough detail to reproduce it.
 
+## Support
+
+If Tiding is useful to you and you would like to show your appreciation, you can [buy me a coffee](https://buymeacoffee.com/srsatt).
+
 ## License
 
 [Apache License 2.0](LICENSE)
